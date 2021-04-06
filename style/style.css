@@ -22,3 +22,51 @@
     --text-font  : 'Lexend Deca', sans-serif;
     --title-font : 'Big Shoulders Displa', sans-serif;
 }
+body{
+    background-color: var(--white);
+    min-height: 100vh;
+    display:flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+}
+
+.container{
+    display:flex;
+    height: 500px;
+    max-width: 930px;
+}
+/* filtro para oscurer la imagen
+/* .container::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: black;
+    opacity: 0.1;
+    border-radius: 10px 0 0 10px;
+    height: 500px;
+    max-width: 930px;
+} */
+.square{
+    height: 500px;
+    width: 310px;
+}
+
+/* primer contenedor */
+.item-1{
+    background-color: var(--orange);
+    border-radius: 10px 0 0 10px;
+
+}
+.item-2{
+    background-color: var(--cyan);
+}
+.item-3{
+    background-color: var(--dark-cyan);
+    border-radius: 0 10px 10px 0;
+}
+
+
