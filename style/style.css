@@ -57,23 +57,28 @@ body{
 
 .container{
     display:flex;
-    height: 500px;
-    max-width: 930px;
+    height: 31.25rem;
+    max-width: 58.125rem;
 }
 /* formato del primer contenedor */
 .item-1{
     background-color: var(--orange);
     border-radius: 10px 0 0 10px;
     padding: 3.125rem;
+    color: var(--orange);
 }
 
 /*  */
 .item-2{
     background-color: var(--cyan);
+    color: var(--cyan);
+    padding: 3.125rem;
 }
 .item-3{
     background-color: var(--dark-cyan);
+    color: var(--dark-cyan);
     border-radius: 0 10px 10px 0;
+    padding: 3.125rem;
 }
 /* formato general */
 p{
@@ -97,14 +102,14 @@ a{
     text-decoration: none;
     background: var(--gray);
     padding: 1rem 1.75rem;
-    color: var(--orange);
+    color: inherit;
     font-family: var(--text-font);
     border-radius: 2rem;
-    border: 2px solid var(--gray)
+    border: 2px solid var(--gray);
+    font-weight: 500;
 }
 a:hover{
     background: transparent;
     color: var(--gray);
-    border: 2px solid var(--gray)
-    
+    border: 2px solid var(--gray)   
 }
