@@ -16,11 +16,16 @@
     --gray:hsl(0, 0%, 95%);
 
     /* tipografia */
-    --text-body:15px;
+    --text-body:0.9375rem;
     --titulo-weights:700;
     --text-weights:400;
     --text-font  : 'Lexend Deca', sans-serif;
-    --title-font : 'Big Shoulders Displa', sans-serif;
+    --title-font : 'Big Shoulders Display', sans-serif;
+    --line-height:24px
+}
+*,*::before,*::after{
+    box-sizing: border-box;
+
 }
 body{
     background-color: var(--white);
@@ -31,11 +36,6 @@ body{
     align-items: center;
 }
 
-.container{
-    display:flex;
-    height: 500px;
-    max-width: 930px;
-}
 /* filtro para oscurer la imagen
 /* .container::before{
     content: '';
@@ -55,12 +55,19 @@ body{
     width: 310px;
 }
 
-/* primer contenedor */
+.container{
+    display:flex;
+    height: 500px;
+    max-width: 930px;
+}
+/* formato del primer contenedor */
 .item-1{
     background-color: var(--orange);
     border-radius: 10px 0 0 10px;
-
+    padding: 3.125rem;
 }
+
+/*  */
 .item-2{
     background-color: var(--cyan);
 }
@@ -68,5 +75,28 @@ body{
     background-color: var(--dark-cyan);
     border-radius: 0 10px 10px 0;
 }
-
-
+/* formato general */
+p{
+    font-size: var(--text-body);
+    font-family: var(--text-font);
+    color: var(--white);
+    line-height: var(--line-height);
+    font-weight: var(--text-weights);
+}
+h2{
+    font-size: 2rem;
+    font-family: var(--title-font);
+    font-weight: var(--text-weights);
+    color: var(--gray);
+}
+a{
+    display: inline-block;
+    font-size: var(--text-body);
+    margin-top: 5rem;
+    text-decoration: none;
+    background: var(--gray);
+    padding: 1rem 2rem;
+    color: var(--orange);
+    font-family: var(--text-font);
+    border-radius: 2rem;
+}
