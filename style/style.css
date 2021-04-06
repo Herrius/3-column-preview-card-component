@@ -1,0 +1,24 @@
+@import url('https://fonts.google.com/specimen/Lexend+Deca');
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&display=swap');
+
+:root{
+    /* tamaño de dispositivos */
+    --desktop: 1440px;
+    --mobile:375px;
+    /* colores  primarios */
+    --orange:hsl(31, 77%, 52%);
+    --cyan:hsl(184, 100%, 22%);
+    --dark-cyan:hsl(179, 100%, 13%);
+    /* colores de elementos */
+    /* parrafo */
+    --white:hsla(0, 0%, 100%, 0.75);
+    /* background, headings, buttons */
+    --gray:hsl(0, 0%, 95%);
+
+    /* tipografia */
+    --text-body:15px;
+    --titulo-weights:700;
+    --text-weights:400;
+    --text-font  : 'Lexend Deca', sans-serif;
+    --title-font : 'Big Shoulders Displa', sans-serif;
+}
