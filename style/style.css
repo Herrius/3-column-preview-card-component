@@ -25,15 +25,13 @@
 }
 *,*:before,*:after{
     box-sizing: border-box;
-
+    margin: 0;
+    padding: 0;
 }
 body{
     background-color: var(--white);
     min-height: 100vh;
-    display:flex;
-    justify-content: center;
-    align-content: center;
-    align-items: center;
+
 }
 
 /* filtro para oscurer la imagen
@@ -50,24 +48,45 @@ body{
     height: 500px;
     max-width: 930px;
 } */
-.square{
-    height: 500px;
-    width: 310px;
+.master{
+    min-height: 100vh;
+    display:flex;
+    justify-content: center;
 }
-
 .container{
     display:flex;
-    height: 31.25rem;
-    max-width: 58.125rem;
+    height: 100%;
+    width: 100%;
+    flex-direction: column;
+    margin: 1.5rem;
+    align-items: center;
+}
+
+.square{
+    height: 31,25rem;
+    width: 19,375rem;
+}
+@media only screen and (min-width:1024px) {
+    .container{
+        display:flex;
+        height: 31.25rem;
+        width: 58.125rem;
+        flex-direction: row;
+        margin: 0;
+
+        align-self:center ;
+    }
 }
 /* formato del primer contenedor */
 .item-1{
     background-color: var(--orange);
-    border-radius: 10px 0 0 10px;
+    border-radius: 10px 10px 0 0;
     padding: 3.125rem;
     color: var(--orange);
 }
-
+@media only screen and (min-width:1024px){
+    .item-1{border-radius: 10px 0 0 10px;}
+}
 /*  */
 .item-2{
     background-color: var(--cyan);
@@ -77,8 +96,11 @@ body{
 .item-3{
     background-color: var(--dark-cyan);
     color: var(--dark-cyan);
-    border-radius: 0 10px 10px 0;
+    border-radius: 0 0 10px 10px;
     padding: 3.125rem;
+}
+@media only screen and (min-width:1024px){
+    .item-3{border-radius: 0 10px 10px 0;}
 }
 /* formato general */
 p{
@@ -90,6 +112,7 @@ p{
     letter-spacing: 1px;
 }
 h2{
+    margin: 2.625rem 0;
     font-size: 2rem;
     font-family: var(--title-font);
     font-weight: var(--text-weights);
@@ -98,7 +121,7 @@ h2{
 a{
     display: inline-block;
     font-size: var(--text-body);
-    margin-top: 5rem;
+    margin-top: 2rem;
     text-decoration: none;
     background: var(--gray);
     padding: 1rem 1.75rem;
@@ -107,6 +130,9 @@ a{
     border-radius: 2rem;
     border: 2px solid var(--gray);
     font-weight: 500;
+}
+@media only screen and (min-width:1024px){
+    a{margin-top: 5rem;}
 }
 a:hover{
     background: transparent;
